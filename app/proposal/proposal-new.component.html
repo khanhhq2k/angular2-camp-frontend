@@ -7,55 +7,58 @@
 
           <div class='form-group'>
             <label for='customer'>Customer Name:</label>
-            <input type="text" name="customer" id='customer' placeholder="Company Name" required #customer='ngModel' [(ngModel)]='proposal.customer'>
-            <div [hidden]="customer.valid || customer.pristine">
+            <input class="form-control" type="text" name="customer" id='customer' placeholder="Company Name" required #customer='ngModel' [(ngModel)]='proposal.customer'>
+            <div class="alert alert-danger" [hidden]="customer.valid || customer.pristine">
               Customer name is required!
             </div>
           </div>
 
           <div class='form-group'>
             <label for='portfolio_url'>Portfolio link:</label>
-            <input type="text" name="portfolio_url" id='portfolio_url' placeholder="Portfolio URL" required #portfolio_url='ngModel' [(ngModel)]='proposal.portfolio_url'>
-            <div [hidden]="portfolio_url.valid || portfolio_url.pristine">
+            <input class="form-control" type="text" name="portfolio_url" id='portfolio_url' placeholder="Portfolio URL" required #portfolio_url='ngModel' [(ngModel)]='proposal.portfolio_url'>
+            <div class="alert alert-danger" [hidden]="portfolio_url.valid || portfolio_url.pristine">
               Portfolio URL is required!
             </div>
           </div>
 
           <div class='form-group'>
             <label for='tools'>Tools:</label>
-            <input type="text" name="tools" id='tools' placeholder="Tools to be used" required #tools='ngModel' [(ngModel)]='proposal.tools'>
-            <div [hidden]="tools.valid || tools.pristine">
+            <input class="form-control" type="text" name="tools" id='tools' placeholder="Tools to be used" required #tools='ngModel' [(ngModel)]='proposal.tools'>
+            <div class="alert alert-danger" [hidden]="tools.valid || tools.pristine">
               Tools is required!
             </div>
           </div>
 
           <div class='form-group'>
             <label for='estimated_hours'>Estimate Hours:</label>
-            <input type="number" name="estimated_hours" id='estimated_hours' required #estimated_hours='ngModel' [(ngModel)]='proposal.estimated_hours'>
-            <div [hidden]="estimated_hours.valid || estimated_hours.pristine">
+            <input class="form-control" type="number" name="estimated_hours" id='estimated_hours' required #estimated_hours='ngModel' [(ngModel)]='proposal.estimated_hours'>
+            <div class="alert alert-danger" [hidden]="estimated_hours.valid || estimated_hours.pristine">
               Estimated Hours is required!
             </div>
           </div>
 
           <div class='form-group'>
             <label for='hourly_rate'>Hourly Rate:</label>
-            <input type="number" name="hourly_rate" id='hourly_rate' required #hourly_rate='ngModel' [(ngModel)]='proposal.hourly_rate'>
-            <div [hidden]="hourly_rate.valid || hourly_rate.pristine">
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input class="form-control" type="number" name="hourly_rate" id='hourly_rate' required #hourly_rate='ngModel' [(ngModel)]='proposal.hourly_rate'>
+            </div>
+            <div class="alert alert-danger" [hidden]="hourly_rate.valid || hourly_rate.pristine">
               Hourly Rate is required!
             </div>
           </div>
 
           <div class='form-group'>
             <label for='weeks_to_complete'>Weeks to Complete:</label>
-            <input type="number" name="weeks_to_complete" id='weeks_to_complete' required #weeks_to_complete='ngModel' [(ngModel)]='proposal.weeks_to_complete'>
-            <div [hidden]="weeks_to_complete.valid || weeks_to_complete.pristine">
+            <input class="form-control" type="number" name="weeks_to_complete" id='weeks_to_complete' required #weeks_to_complete='ngModel' [(ngModel)]='proposal.weeks_to_complete'>
+            <div class="alert alert-danger" [hidden]="weeks_to_complete.valid || weeks_to_complete.pristine">
               Weeks is required!
             </div>
           </div>
 
           <div class='form-group'>
             <label for='client_mail'>Client Email <em>(Optional)</em>:</label>
-            <input type="email" name="client_mail" id='client_mail' #client_mail='ngModel' [(ngModel)]='proposal.client_mail'>
+            <input class="form-control" type="email" name="client_mail" id='client_mail' #client_mail='ngModel' [(ngModel)]='proposal.client_mail'>
           </div>
 
         </form>
