@@ -14,21 +14,21 @@ export class DocumentsComponent {
       description: "sample",
       file_url: "www.google.com",
       updated_at: "17/01/2017",
-      image_url: "www.imgur.com/abc"
+      image_url: "http://myfreelanceacademy.com/wp-content/uploads/2013/11/Freelance-home.jpg"
     },
     {
       title: "My Second Doc",
       description: "sample",
       file_url: "www.google.com",
       updated_at: "18/01/2017",
-      image_url: "www.imgur.com/a"
+      image_url: "https://www.justfrom5k.com/new/assets/img/Blogs/find-freelance-work.jpg"
     },
     {
       title: "My Last Doc",
       description: "sample",
       file_url: "www.google.com",
       updated_at: "19/01/2017",
-      image_url: "www.imgur.com/c"
+      image_url: "https://cdn.elegantthemes.com/blog/wp-content/uploads/2016/01/How-to-increase-freelancer-rates.jpg"
     }
 
   ]
