@@ -5,3 +5,6 @@ Keywords:
 	-> USD
 	-> true: sign instead of USD
 	-> .0: floating number, 0 means something link 1000, 1 means 1000.0
+-Providers
+-Injectable
+-Observable pattern(subscribe method)
