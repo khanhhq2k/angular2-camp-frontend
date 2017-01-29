@@ -60,6 +60,12 @@
             <label for='client_mail'>Client Email <em>(Optional)</em>:</label>
             <input class="form-control" type="email" name="client_mail" id='client_mail' #client_mail='ngModel' [(ngModel)]='proposal.client_mail'>
           </div>
+          <button type="submit" class="btn btn-outline-primary btn-lg"
+            [disabled]="!proposalForm.form.valid"
+            [hidden]="submitted"
+          >
+            Generate Proposal
+          </button>
 
         </form>
       </div>
