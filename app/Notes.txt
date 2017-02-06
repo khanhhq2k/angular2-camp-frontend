@@ -8,3 +8,4 @@ Keywords:
 -Providers
 -Injectable
 -Observable pattern(subscribe method)
+-Github alias
